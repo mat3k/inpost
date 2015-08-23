@@ -20,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    # standard client init
+    client = Inpost::MachineAPI.new
+
+    # custom endpoint
+    client = Inpost::MachineAPI.new(endpoint: 'http://some_other_valid_url.com/api')
+
+    # cache disabled
+    client = Inpost::MachineAPI.new(cache_store: nil)
+
+    # get machines
+    client.machines # => [{}, {}, ...] get machines
+
+    # get machine by ID
+    client.machine(12345) => {}
+
+    # Html render helper
+    html = Inpost::HtmlHelper.new
+    html.select_tag(collection: client.machines)
+    html.select_tag(collection: client.machine, type: '0')
 
 ## Contributing
 
