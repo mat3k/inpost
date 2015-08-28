@@ -1,13 +1,13 @@
 # Inpost
 
-TODO: Write a gem description
+Very light inpost machine API wrapper
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'inpost', :git => 'git://github.com/mat3kbn/inpost.git'
+gem 'inpost', :git => 'git://github.com/mat3k/inpost.git'
 ```
 
 And then execute:
