@@ -7,7 +7,7 @@ TODO: Write a gem description
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'inpost'
+gem 'inpost', :git => 'git://github.com/mat3kbn/inpost.git'
 ```
 
 And then execute:
@@ -38,7 +38,7 @@ Or install it yourself as:
     # Html render helper
     type_0_machines  = client.machines.select { |machine| machine['type'] == 0}
     Inpost::HtmlHelper::select_tag(collection: client.machines)
-    Inpost::HtmlHelper::select_tag(collection: type_0_machines, params: {})
+    Inpost::HtmlHelper::select_tag(collection: type_0_machines, params: {id: '', class: '', style: ''})
 
 ## Contributing
 
