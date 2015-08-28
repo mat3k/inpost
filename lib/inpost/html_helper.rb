@@ -1,7 +1,7 @@
 module Inpost
   module HtmlHelper
 
-    EDITABLE_ATTRIBUTES = %i(id class)
+    EDITABLE_ATTRIBUTES = %i(id class style)
 
     class << self
       def machine_select_tag(collection: [], attributes: {})
